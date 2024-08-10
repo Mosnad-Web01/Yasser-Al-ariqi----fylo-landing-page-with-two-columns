@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 10px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 990px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+header {
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.landing-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.landing-section .landing-text-content {
+  flex: 1;
+}
+
+.landing-text-content h1 {
+  font-size: 2.6rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.landing-text-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.landing-text-content input {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 2px;
+}
+.landing-text-content button {
+  max-width: 170px;
+  width: 100%;
+  padding: 10px 0px;
+  margin-left: 10px;
+  border: 1px solid hsl(224, 93%, 58%);
+  background-color: hsl(224, 93%, 58%);
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+}
+
+.landing-text-content input::placeholder {
+  padding-left: 15px;
+  color: #949494;
+}
+.landing-section .landing-image-section {
+  flex: 1;
+}
+
+.landing-image-section img {
+  width: 100%;
+}
+
+
+
+.main-section {
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.main-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0px;
+}
+
+.main-section .container .main-section-text {
+    flex: 1.1;
+    padding: 15px;
+}
+.main-section .container .main-section-image {
+    flex: 0.9;
+}
+.main-section-image img {
+    width: 100%;
+}
+
+
+.main-section-text h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.main-section-text p {
+  font-size: 1rem;
+  max-width: 550px;
+  width: 100%;
+  line-height: 1.5;
+  color: #4a4a4a;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.link-container {
+    display: inline-flex; /* Change from flex to inline-flex to avoid taking full width */
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    padding-bottom: 10px; /* Space between the content and the line */
+}
+
+.link-container a {
+    color: hsl(170, 45%, 43%);
+    text-decoration: none; /* Remove the default underline */
+}
+
+.link-container img {
+    width: 20px;
+}
+
+.link-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Line width to match the content width */
+    height: 1px; /* Thickness of the line */
+    background-color: hsl(170, 45%, 43%); /* Green color for the line */
+}
+
+.testmonial-card {
+    max-width: 380px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+
+.user-detailes p , .user-detailes h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.user-detailes p {
+    font-size: 0.7rem;
+    margin-top: 4px;
+}
+
+.user-detailes h3 {
+    font-size: 1rem;
+}
+
+
+.contact-us {
+    background-color: hsl(238, 22%, 44%);
+    padding: 80px 0px;
+}
+
+.contact-us .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.contact-us-text {
+    flex: 1;
+}
+.contact-us-form {
+    flex: 1;
+}
+.contact-us .contact-us-text h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.contact-us .contact-us-text p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.74);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-us-form input {
+    max-width: 500px;
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.contact-us-form input::placeholder {
+    padding-left: 10px;
+    color: #bebebe;
+    letter-spacing: 1px;
+}
+
+.contact-us-form button {
+    width: 200px;
+    max-width: 100%;
+    padding: 12px 0px;
+    border-radius: 2px;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    padding: 70px 0px;
+    color: rgba(255, 255, 255, 0.868);
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.footer-item ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.footer-item:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-item:nth-child(1) img {
+    margin-right: 10px;
+}
+
+.footer-item:nth-child(4) {
+    display: flex;
+    gap: 16px ;
+    font-size: 25px;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    nav ul {
+       gap: 10px;
+    }
+
+    .landing-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .landing-section input {
+        margin-bottom: 10px;
+    }
+   
+    .landing-section .landing-text-content, .landing-section .landing-image-section {
+        flex: unset;
+    }
+
+    .main-section .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .main-section-image {
+        margin-bottom: 50px;
+    }
+    
+
+    .main-section .container .main-section-text, .main-section .container .main-section-image {
+        flex: unset;
+    }
+
+    .contact-us .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .container {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 40px;
+        text-align: center;
+     
+        justify-items: center;
+    }
+    .testmonial-card {
+      margin: 50px auto;
+    }
+}
